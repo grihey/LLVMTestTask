@@ -49,7 +49,7 @@ Optimization level also given for example and don't influence on the process.
     
 After the command you will have **fnshift_O0.ll** file with generated llvm IR.  
 
-### Apply pass to bytecode  
+### Apply pass   
 
     opt -load {llvm-build-folder}/lib/LLVMFnshift.so -fnshift -S < fnshift_O0.ll > fnshift_O0_opt.ll
     
@@ -65,7 +65,7 @@ Generate asm for IR with fnshift optimization:
 
     llc --mtriple=armv7-linux-gnueabihf fnshift_O0_opt.ll -o fnshift_opt.s
     
-### Run tests
+### Runing tests  
 Submitted patch, also, contains three tests for checking corecteness of the pass's  
 working:   
 
