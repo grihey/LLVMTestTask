@@ -3,6 +3,7 @@ Function pass proposed to use with ARM arch.
 
 ## Prerequisites
 * Linux platform
+* Ability to build llvm tree
 * Updated llvm repository
 
 ### Apply git patch
@@ -89,7 +90,7 @@ to **lit.cfg.py** file by replacing *{llvm-build-folder}* part of the string
     config.substitutions.append(('%fnshiftpath', fnshiftsopath))
 ```
 
-%fnshiftpath substitutes are using in test's RUN commands.
+**%fnshiftpath** substitutes are using in test's RUN commands.
 
 Now, you can run tests for example by following command:  
     
